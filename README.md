@@ -34,6 +34,7 @@ Ecosystem: Packages like Laravel Echo, Cashier, and more extend functionality.
 Community: Large, active community with tons of tutorials and support.
 
 **2. Setting Up Laravel**
+
 Before coding, let’s set up your Laravel environment.
 
 **Requirements** :
@@ -64,6 +65,7 @@ Open the .env file in your project root.
 Set your database details (e.g., DB_DATABASE, DB_USERNAME, DB_PASSWORD).
 
 **3. Laravel Project Structure** : 
+
 When you create a Laravel project, you’ll see folders like this:
 
 app/: Core application code (Models, Controllers, etc.).
@@ -78,6 +80,7 @@ vendor/: Composer dependencies (don’t edit this).
 A command-line tool for Laravel tasks (e.g., creating files, running migrations).
 
 **4. Routing in Laravel**
+
 Routes define how your application responds to HTTP requests (e.g., GET, POST). They’re managed in routes/web.php (for web) and routes/api.php (for APIs).
 
 **Basic Routing**
@@ -119,17 +122,23 @@ Use it in links: route('home').
 ```
 
 **5. Controllers**
+
 Controllers handle logic for routes. Instead of putting logic in routes/web.php, move it to a controller.
 
 **Creating a Controller**
+
 Generate a Controller:
+
 ```
 php artisan make:controller UserController
+
 ```
 This creates app/Http/Controllers/UserController.php.
 
 **Add a Method:**
+
 UserController.php:
+
 ```
 namespace App\Http\Controllers;
 
@@ -142,10 +151,14 @@ class UserController extends Controller
         return "User ID: " . $id;
     }
 }
+
 ```
 
+
 **Link to Route:**
+
 In routes/web.php:
+
 ```
 use App\Http\Controllers\UserController;
 
@@ -156,6 +169,7 @@ Visit http://localhost:8000/user/456—same result, but cleaner!
 
 
 **6. Views and Blade Templating**
+
 Views are your application’s UI, stored in resources/views. Laravel uses Blade, a templating engine, to make views dynamic.
 
 **Creating a View**
@@ -323,7 +337,10 @@ Run Migrations:
 Visit http://localhost:8000/register or /login.
 
 
+
+
 **11. Building APIs with Laravel** : 
+
 
 APIs allow your app to communicate with other systems (e.g., mobile apps).
 
@@ -370,6 +387,7 @@ Visit http://localhost:8000/api/users or use a tool like Postman.
 
 **Add Authentication:**
 Use Laravel Sanctum or Passport for token-based auth.
+
 
 
 **12. Useful Laravel Tools and Features** :
