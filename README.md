@@ -16,8 +16,10 @@ Welcome to your Laravel learning journey! , I’ll guide you step-by-step throug
                                             11.Building APIs with Laravel
                                             12.Useful Laravel Tools and Features
 
+
                                             
 **1. What is Laravel?**
+
 Laravel is an open-source PHP framework designed to make web development easier, faster, and more enjoyable. It follows the Model-View-Controller (MVC) architectural pattern, which separates your application’s logic into three parts:
 
 Model: Manages data and database interactions.
